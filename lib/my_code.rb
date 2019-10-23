@@ -55,9 +55,12 @@ def reduce_to_all_true(source_array)
     # if (source_array[i] == 1 || source_array[i] == 2 || source_array[i] == true || source_array[i] == "razmatazz" || source_array[i] == false)
     #   return true
     # end
+    if (!source_array[i])
+      return false
+    end 
     i += 1 
   end
-  return false 
+  return true  
 end
 
 # def reduce_to_any_true(source_array)
